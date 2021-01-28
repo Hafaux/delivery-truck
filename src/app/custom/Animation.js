@@ -1,5 +1,4 @@
-import gsap from 'gsap/gsap-core';
-import { Back } from 'gsap/gsap-core';
+import gsap, { Back } from 'gsap/gsap-core';
 import selectors from './selectors';
 
 export default class Animation {
@@ -20,7 +19,7 @@ export default class Animation {
     this._tl.to(selectors.truckBtnBg, { scale: 1.1, transformOrigin: '50%', duration: 0.3, id: 'truckBtnScaleUp' });
     this._tl.to(selectors.truckBtnBg, { scale: 1, duration: 0.3, ease: 'power1.in', id: 'truckBtnScaleDown' });
 
-    this._tl.to(selectors.containerParts, { opacity: 1, duration: 0, id: 'containerParts'});
+    this._tl.to(selectors.containerParts, { opacity: 1, duration: 0, id: 'containerParts' });
     this._tl.to(selectors.container, { opacity: 1, id: 'container' });
 
     this._tl.to(selectors.backWheel1, { opacity: 1, id: 'backWheel1' });
